@@ -1,0 +1,21 @@
+1. Crie o projeto ror_autenticacaoHTTP
+rails new ror_autenticacaoHTTP
+
+2. Adicionar o Devise ao Gemfile do projeto Rails. Abrir o arquivo Gemfile e adicionar a seguinte linha:
+gem 'devise' ou rails generate devise:install
+Instalar o Devise:
+bundle install
+
+3. Depois de instalar o Devise, você precisa gerar o modelo User. Faça isso com o seguinte comando:
+rails generate devise User
+
+4 Em seguida, migre o banco de dados com o seguinte comando:
+rails db:migrate
+
+4. Agora, você precisa adicionar algumas rotas ao seu arquivo config/routes.rb. Adicione a seguinte linha:
+devise_for :users
+
+5. Subir o servidor:
+rails server 1. Crie o projeto ror_autenticacaoHTTP
+rails new ror_autenticacaoHTTP
+
